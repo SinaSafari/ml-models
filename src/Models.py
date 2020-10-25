@@ -34,20 +34,20 @@ class BaseRegression():
     def predict(self, X):
         self._predict(X, self.weights, self.bias)
 
-    def _predict():
+    def _predict(self, X, w, b):
         raise NotImplementedError()
 
-    def _approximation():
+    def _approximation(self, X, w, b):
         raise NotImplementedError()
 
 
 class LinearRegression(BaseRegression):
 
-    def _approximation():
-        pass
+    def _approximation(self, X, w, b):
+        return np.dot(X, w) + b
 
-    def _predict():
-        pass
+    def _predict(self, X, w, b):
+        return np.dot(X, w) + b
 
 
 class LogisticRegression(BaseRegression):
