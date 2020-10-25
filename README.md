@@ -2,4 +2,7 @@
 
 
 ## models implemented
-- [ ] Linear Regression
+- [x] Linear Regression
+- [x] Logistic Regression
+- [x] KNN
+- [x] Naive Bayes

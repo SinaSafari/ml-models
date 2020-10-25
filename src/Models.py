@@ -76,7 +76,7 @@ class KNN():
         self.X_train = X
         self.y_train = y
 
-    def euclidean_distance(x1, x2):
+    def _euclidean_distance(x1, x2):
         return np.sqrt(np.sum((x1 - x2)**2))
 
     def predict():
@@ -85,7 +85,7 @@ class KNN():
 
     def _predict():
         # Compute distances between x and all examples in the training set
-        distances = [self.euclidean_distance(x, x_train)
+        distances = [self._euclidean_distance(x, x_train)
                      for x_train in self.X_train]
         # Sort by distance and return indices of the first k neighbors
         k_idx = np.argsort(distances)[:self.k]
